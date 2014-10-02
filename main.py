@@ -34,8 +34,8 @@ def guestbook_list():
 def guestbook_search():
     query = request.args.get('query', '')
     search_results = ferris3.search.search('searchable:GuestbookPost', query)
-    greetings = ferris3.search.to_entities(search_results).items
-    return render_template('guestbook.html', greetings=greetings, query=query)
+    greetings, error, cursor = ferris3.search.to_entities(search_results)
+    return render_template('guestbook.html', greetings=greetings, error=error, query=query)
 
 
 @app.route('/sign', methods=['POST'])
@@ -53,6 +53,6 @@ def page_not_found(e):
 
 
 @app.errorhandler(500)
-def page_not_found(e):
+def on_error(e):
     """Return a custom 500 error."""
     return 'Sorry, unexpected error: {}'.format(e), 500
