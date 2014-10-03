@@ -6,7 +6,7 @@ This is based on the Google [Flask Skeleton](https://github.com/GoogleCloudPlatf
 
 ## Description of functionality
 
-This is more or less the App Engine Guestbook example written in Flask. The application use's Ferris' search utilites to automatically add entities to the search index and search over them.
+This is more or less the App Engine Guestbook example written in Flask. The application uses Ferris' search utilites to automatically add entities to the search index and search over them.
 
 ## Run Locally
 1. Install the [App Engine Python SDK](https://developers.google.com/appengine/downloads).
