@@ -4,6 +4,10 @@ This is an example project of using [Ferris3](https://github.com/jonparrott/ferr
 
 This is based on the Google [Flask Skeleton](https://github.com/GoogleCloudPlatform/appengine-python-flask-skeleton).
 
+## Description of functionality
+
+This is more or less the App Engine Guestbook example written in Flask. The application use's Ferris' search utilites to automatically add entities to the search index and search over them.
+
 ## Run Locally
 1. Install the [App Engine Python SDK](https://developers.google.com/appengine/downloads).
 See the README file for directions. You'll need python 2.7 and [pip 1.4 or later](http://www.pip-installer.org/en/latest/installing.html) installed too.
@@ -31,7 +35,7 @@ See [the development server documentation](https://developers.google.com/appengi
 for options when running dev_appserver.
 
 
-### Basic steps to include Ferris in existing projects
+## Basic steps to include Ferris in existing projects
 
 1. Add endpoints to your app.yaml's libraries section. Even if you don't use endpoints, this is a prerequisite for ferris3.
 
@@ -50,7 +54,7 @@ for options when running dev_appserver.
 
 4. You can now import ``ferris3`` and use all features you'd like.
 
-### Feedback
+## Feedback
 Star this repo if you found it useful. Use the github issue tracker to give
 feedback on this repo.
 
