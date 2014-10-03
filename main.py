@@ -14,7 +14,7 @@ from google.appengine.ext import ndb
 
 
 class GuestbookPost(ferris3.ndb.Model):
-    # Using ferris3.ndb.Model gives up behaviors.
+    # Using ferris3.ndb.Model gives us behaviors.
     class Meta:
         # We'll use the searchable behavior to automatically index our models.
         behaviors = (ferris3.search.Searchable,)
