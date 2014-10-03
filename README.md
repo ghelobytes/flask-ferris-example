@@ -14,7 +14,6 @@ See the README file for directions. You'll need python 2.7 and [pip 1.4 or later
    git clone https://github.com/jonparrott/flask-ferris-example.git
    ```
 3. Install dependencies in the project's lib directory.
-   Note: App Engine can only import libraries from inside your project directory.
 
    ```
    cd flask-ferris-example
